@@ -10,6 +10,7 @@
 		15B9554124A0AFE800CE00CF /* RandomBackgroundFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15B9553724A0AFE800CE00CF /* RandomBackgroundFramework.framework */; };
 		15B9554624A0AFE800CE00CF /* RandomBackgroundFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B9554524A0AFE800CE00CF /* RandomBackgroundFrameworkTests.swift */; };
 		15B9554824A0AFE800CE00CF /* RandomBackgroundFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 15B9553A24A0AFE800CE00CF /* RandomBackgroundFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		15B9555224A0B04100CE00CF /* RandomBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B9555124A0B04100CE00CF /* RandomBackground.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		15B9554024A0AFE800CE00CF /* RandomBackgroundFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RandomBackgroundFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		15B9554524A0AFE800CE00CF /* RandomBackgroundFrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomBackgroundFrameworkTests.swift; sourceTree = "<group>"; };
 		15B9554724A0AFE800CE00CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15B9555124A0B04100CE00CF /* RandomBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomBackground.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				15B9553A24A0AFE800CE00CF /* RandomBackgroundFramework.h */,
 				15B9553B24A0AFE800CE00CF /* Info.plist */,
+				15B9555124A0B04100CE00CF /* RandomBackground.swift */,
 			);
 			path = RandomBackgroundFramework;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					15B9553624A0AFE800CE00CF = {
 						CreatedOnToolsVersion = 11.5;
+						LastSwiftMigration = 1150;
 					};
 					15B9553F24A0AFE800CE00CF = {
 						CreatedOnToolsVersion = 11.5;
@@ -195,6 +199,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15B9555224A0B04100CE00CF /* RandomBackground.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +345,7 @@
 		15B9554C24A0AFE800CE00CF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -355,6 +361,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.RandomBackgroundFramework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -363,6 +370,7 @@
 		15B9554D24A0AFE800CE00CF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -386,6 +394,7 @@
 		15B9554F24A0AFE800CE00CF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = RandomBackgroundFrameworkTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -403,6 +412,7 @@
 		15B9555024A0AFE800CE00CF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = RandomBackgroundFrameworkTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
